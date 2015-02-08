@@ -1,0 +1,41 @@
+{
+	"name": "vinkla/pusher",
+	"description": "Laravel 5 wrapper for the Pusher HTTP API.",
+	"homepage": "https://github.com/vinkla/pusher",
+	"license": "MIT",
+	"keywords": ["laravel", "pusher", "http", "api", "php-pusher-server", "rest", "realtime", "trigger", "publish", "events"],
+	"authors": [
+		{
+			"name": "Vincent Klaiber",
+			"email": "me@vinkla.com",
+			"homepage": "http://vinkla.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.7",
+		"illuminate/contracts": "~5.0",
+		"illuminate/support": "~5.0",
+		"graham-campbell/manager": "~2.0",
+		"pusher/pusher-php-server": "~2.0"
+	},
+	"require-dev": {
+		"graham-campbell/testbench": "~2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"Vinkla\\Pusher\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Vinkla\\Tests\\Pusher\\": "tests/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
