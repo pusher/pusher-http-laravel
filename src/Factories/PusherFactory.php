@@ -2,6 +2,8 @@
 
 namespace Vinkla\Pusher\Factories;
 
+use Pusher;
+
 class PusherFactory
 {
 	/**
