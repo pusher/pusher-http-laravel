@@ -34,6 +34,12 @@ Please use [@artdarek's Laravel 4 Pusherer package](https://github.com/artdarek/
 
 ## Configuration
 
+Laravel Pusher requires connection configuration. To get started, you'll need to publish all vendor assets:
+
+```bash
+php artisan vendor:publish
+```
+
 This will create a `config/pusher.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
 
 #### Default Connection Name
