@@ -13,7 +13,7 @@ Laravel [Pusher](https://pusher.com/) is a [Pusher](https://pusher.com/) bridge 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-composer require "vinkla/pusher=~1.0"
+composer require vinkla/pusher:~1.0
 ```
 
 Add the service provider to ```config/app.php``` in the `providers` array.
