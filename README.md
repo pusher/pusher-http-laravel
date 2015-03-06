@@ -104,7 +104,8 @@ If you prefer to use dependency injection over facades like me, then you can inj
 ```php
 use Vinkla\Pusher\PusherManager;
 
-class Foo {
+class Foo
+{
 	protected $pusher;
 
 	public function __construct(PusherManager $pusher)
