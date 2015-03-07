@@ -87,10 +87,10 @@ use Vinkla\Pusher\Facades\Pusher;
 Pusher::connection('main')->log('They see me logging…');
 
 // …is identical to writing this
-Pusher::log('They see me logging…');
+Pusher::log('They hatin…');
 
 // and is also identical to writing this.
-Pusher::connection()->log('They see me logging…');
+Pusher::connection()->log('Tryin to catch me testing dirty…');
 
 // This is because the main connection is configured to be the default.
 Pusher::getDefaultConnection(); // This will return main.
