@@ -6,6 +6,7 @@ Laravel Pusher
 Laravel [Pusher](https://pusher.com/) is a [Pusher](https://pusher.com/) bridge for Laravel 5 using the [official Pusher package](https://github.com/pusher/pusher-php-server).
 
 [![Build Status](https://img.shields.io/travis/vinkla/pusher/master.svg?style=flat)](https://travis-ci.org/vinkla/pusher)
+[![StyleCI](https://styleci.io/repos/30508702/shield?style=flat)](https://styleci.io/repos/30508702)
 [![Latest Stable Version](http://img.shields.io/packagist/v/vinkla/pusher.svg?style=flat)](https://packagist.org/packages/vinkla/pusher)
 [![License](https://img.shields.io/packagist/l/vinkla/pusher.svg?style=flat)](https://packagist.org/packages/vinkla/pusher)
 
