@@ -2,20 +2,20 @@
 
 return [
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Connection Name
-	|--------------------------------------------------------------------------
-	|
-	| Here you may specify which of the connections below you wish to use as
-	| your default connection for all work. Of course, you may use many
-	| connections at once using the manager class.
-	|
-	*/
+    /*
+    |--------------------------------------------------------------------------
+    | Default Connection Name
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify which of the connections below you wish to use as
+    | your default connection for all work. Of course, you may use many
+    | connections at once using the manager class.
+    |
+    */
 
-	'default' => 'main',
+    'default' => 'main',
 
-	/*
+    /*
     |--------------------------------------------------------------------------
     | Pusher Connections
     |--------------------------------------------------------------------------
@@ -26,28 +26,28 @@ return [
     |
     */
 
-	'connections' => [
+    'connections' => [
 
-		'main' => [
-			'auth_key' => 'your-auth-key',
-			'secret' => 'your-secret',
-			'app_id' => 'your-app-id',
-			'options' => [],
-			'host' => null,
-			'port' => null,
-			'timeout' => null
-		],
+        'main' => [
+            'auth_key' => 'your-auth-key',
+            'secret' => 'your-secret',
+            'app_id' => 'your-app-id',
+            'options' => [],
+            'host' => null,
+            'port' => null,
+            'timeout' => null
+        ],
 
-		'alternative' => [
-			'auth_key' => 'your-auth-key',
-			'secret' => 'your-secret',
-			'app_id' => 'your-app-id',
-			'options' => [],
-			'host' => null,
-			'port' => null,
-			'timeout' => null
-		],
+        'alternative' => [
+            'auth_key' => 'your-auth-key',
+            'secret' => 'your-secret',
+            'app_id' => 'your-app-id',
+            'options' => [],
+            'host' => null,
+            'port' => null,
+            'timeout' => null
+        ],
 
-	]
+    ]
 
 ];

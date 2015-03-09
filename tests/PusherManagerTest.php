@@ -8,40 +8,39 @@ use Vinkla\Pusher\PusherManager;
 
 class PusherManagerTest extends AbstractTestBenchTestCase
 {
-	public function testCreateConnection()
-	{
-		$config = ['path' => __DIR__];
+    public function testCreateConnection()
+    {
+        $config = ['path' => __DIR__];
 
-		$manager = $this->getManager($config);
+        $manager = $this->getManager($config);
 
-		$manager->getConfig()->shouldReceive('get')->once()
-			->with('pusher.default')->andReturn('pusher');
+        $manager->getConfig()->shouldReceive('get')->once()
+            ->with('pusher.default')->andReturn('pusher');
 
-		$this->assertSame([], $manager->getConnections());
+        $this->assertSame([], $manager->getConnections());
 
-		$return = $manager->connection();
+        $return = $manager->connection();
 
-		$this->assertInstanceOf('Pusher', $return);
+        $this->assertInstanceOf('Pusher', $return);
 
-		$this->assertArrayHasKey('pusher', $manager->getConnections());
-	}
+        $this->assertArrayHasKey('pusher', $manager->getConnections());
+    }
 
-	protected function getManager(array $config)
-	{
-		$repository = Mockery::mock('Illuminate\Contracts\Config\Repository');
-		$factory = Mockery::mock('Vinkla\Pusher\Factories\PusherFactory');
+    protected function getManager(array $config)
+    {
+        $repository = Mockery::mock('Illuminate\Contracts\Config\Repository');
+        $factory = Mockery::mock('Vinkla\Pusher\Factories\PusherFactory');
 
-		$manager = new PusherManager($repository, $factory);
+        $manager = new PusherManager($repository, $factory);
 
-		$manager->getConfig()->shouldReceive('get')->once()
-			->with('pusher.connections')->andReturn(['pusher' => $config]);
+        $manager->getConfig()->shouldReceive('get')->once()
+            ->with('pusher.connections')->andReturn(['pusher' => $config]);
 
-		$config['name'] = 'pusher';
+        $config['name'] = 'pusher';
 
-		$manager->getFactory()->shouldReceive('make')->once()
-			->with($config)->andReturn(Mockery::mock('Pusher'));
+        $manager->getFactory()->shouldReceive('make')->once()
+            ->with($config)->andReturn(Mockery::mock('Pusher'));
 
-		return $manager;
-	}
-
+        return $manager;
+    }
 }
