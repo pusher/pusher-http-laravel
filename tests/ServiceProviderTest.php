@@ -6,15 +6,14 @@ use GrahamCampbell\TestBench\Traits\ServiceProviderTestCaseTrait;
 
 class ServiceProviderTest extends AbstractTestCase
 {
-
     use ServiceProviderTestCaseTrait;
 
-    public function PusherFactoryIsInjectable()
+    public function testPusherFactoryIsInjectable()
     {
         $this->assertIsInjectable('Vinkla\Pusher\Factories\PusherFactory');
     }
 
-    public function PusherManagerIsInjectable()
+    public function testPusherManagerIsInjectable()
     {
         $this->assertIsInjectable('Vinkla\Pusher\PusherManager');
     }
