@@ -34,7 +34,7 @@ class PusherFactory
      *
      * @throws \InvalidArgumentException
      *
-     * @return string
+     * @return array
      */
     protected function getConfig(array $config)
     {
@@ -51,7 +51,7 @@ class PusherFactory
         foreach ($keys as $key) {
             if (!array_key_exists($key, $config)) {
                 throw new \InvalidArgumentException(
-                    'The Pusher client requires authentication.'
+                    'The Pusher client requires configuration.'
                 );
             }
         }
