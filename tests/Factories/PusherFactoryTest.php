@@ -1,10 +1,24 @@
 <?php
 
+/*
+ * This file is part of Laravel Pusher.
+ *
+ * (c) Vincent Klaiber <hello@vinkla.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Vinkla\Tests\Pusher\Factories;
 
 use Vinkla\Pusher\Factories\PusherFactory;
 use Vinkla\Tests\Pusher\AbstractTestCase;
 
+/**
+ * This is the Pusher factory test class.
+ *
+ * @author Vincent Klaiber <hello@vinkla.com>
+ */
 class PusherFactoryTest extends AbstractTestCase
 {
     public function testMakeStandard()
