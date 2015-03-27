@@ -1,6 +1,6 @@
 {
 	"name": "vinkla/pusher",
-	"description": "Laravel 5 wrapper for the Pusher HTTP API.",
+	"description": "Laravel wrapper for the Pusher HTTP API.",
 	"license": "MIT",
 	"keywords": ["laravel", "pusher", "http", "api", "php-pusher-server", "rest", "realtime", "trigger", "publish", "events"],
 	"authors": [
