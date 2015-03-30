@@ -25,7 +25,7 @@ Pusher::get('/channels');
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-composer require vinkla/pusher:~1.0
+composer require vinkla/pusher
 ```
 
 Add the service provider to ```config/app.php``` in the `providers` array.
