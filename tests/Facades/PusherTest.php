@@ -15,7 +15,7 @@ use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
 use Vinkla\Tests\Pusher\AbstractTestCase;
 
 /**
- * This is the Pusher test class.
+ * This is the pusher test class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */

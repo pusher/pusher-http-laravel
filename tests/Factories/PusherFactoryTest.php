@@ -15,7 +15,7 @@ use Vinkla\Pusher\Factories\PusherFactory;
 use Vinkla\Tests\Pusher\AbstractTestCase;
 
 /**
- * This is the Pusher factory test class.
+ * This is the pusher factory test class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
@@ -41,11 +41,52 @@ class PusherFactoryTest extends AbstractTestCase
     /**
      * @expectedException \InvalidArgumentException
      */
-    public function testMakeWithoutClientId()
+    public function testMakeWithoutAuthKey()
     {
         $factory = $this->getPusherFactory();
 
-        $factory->make([]);
+        $factory->make([
+            'secret' => 'your-secret',
+            'app_id' => 'your-app-id',
+            'options' => [],
+            'host' => null,
+            'port' => null,
+            'timeout' => null
+        ]);
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testMakeWithoutAppId()
+    {
+        $factory = $this->getPusherFactory();
+
+        $factory->make([
+            'auth_key' => 'your-auth-key',
+            'secret' => 'your-secret',
+            'options' => [],
+            'host' => null,
+            'port' => null,
+            'timeout' => null
+        ]);
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testMakeWithoutSecret()
+    {
+        $factory = $this->getPusherFactory();
+
+        $factory->make([
+            'auth_key' => 'your-auth-key',
+            'app_id' => 'your-app-id',
+            'options' => [],
+            'host' => null,
+            'port' => null,
+            'timeout' => null
+        ]);
     }
 
     protected function getPusherFactory()

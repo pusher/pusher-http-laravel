@@ -14,7 +14,7 @@ namespace Vinkla\Pusher\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * This is the Pusher facade class.
+ * This is the pusher facade class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */

@@ -15,7 +15,7 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
 /**
- * This is the Pusher service provider class.
+ * This is the pusher service provider class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
@@ -39,7 +39,9 @@ class PusherServiceProvider extends ServiceProvider
     protected function setupConfig()
     {
         $source = realpath(__DIR__.'/../config/pusher.php');
+
         $this->publishes([$source => config_path('pusher.php')]);
+
         $this->mergeConfigFrom($source, 'pusher');
     }
 

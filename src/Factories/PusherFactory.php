@@ -14,31 +14,23 @@ namespace Vinkla\Pusher\Factories;
 use Pusher;
 
 /**
- * This is the Pusher factory class.
+ * This is the pusher factory class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
 class PusherFactory
 {
     /**
-     * Make a new Pusher client.
+     * Make a new pusher client.
      *
      * @param array $config
-     * @return Pusher
+     * @return \Pusher
      */
     public function make(array $config)
     {
         $config = $this->getConfig($config);
 
-        return new Pusher(
-            $config['auth_key'],
-            $config['secret'],
-            $config['app_id'],
-            $config['options'],
-            $config['host'],
-            $config['port'],
-            $config['timeout']
-        );
+        return $this->getClient($config);
     }
 
     /**
@@ -71,5 +63,25 @@ class PusherFactory
         }
 
         return array_only($config, $keys);
+    }
+
+    /**
+     * Get the pusher client.
+     *
+     * @param string[] $auth
+     *
+     * @return \Pusher
+     */
+    protected function getClient(array $auth)
+    {
+        return new Pusher(
+            $auth['auth_key'],
+            $auth['secret'],
+            $auth['app_id'],
+            $auth['options'],
+            $auth['host'],
+            $auth['port'],
+            $auth['timeout']
+        );
     }
 }
