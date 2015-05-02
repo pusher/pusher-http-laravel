@@ -16,7 +16,7 @@ use Illuminate\Contracts\Config\Repository;
 use Vinkla\Pusher\Factories\PusherFactory;
 
 /**
- * This is the pusher manager class.
+ * This is the Pusher manager class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
@@ -30,7 +30,7 @@ class PusherManager extends AbstractManager
     private $factory;
 
     /**
-     * Create a new pusher manager instance.
+     * Create a new Pusher manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
      * @param \Vinkla\Pusher\Factories\PusherFactory $factory
@@ -69,7 +69,7 @@ class PusherManager extends AbstractManager
     /**
      * Get the factory instance.
      *
-     * @return PusherFactory
+     * @return \Vinkla\Pusher\Factories\PusherFactory
      */
     public function getFactory()
     {

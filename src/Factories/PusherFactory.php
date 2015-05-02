@@ -14,14 +14,14 @@ namespace Vinkla\Pusher\Factories;
 use Pusher;
 
 /**
- * This is the pusher factory class.
+ * This is the Pusher factory class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
 class PusherFactory
 {
     /**
-     * Make a new pusher client.
+     * Make a new Pusher client.
      *
      * @param array $config
      * @return \Pusher

@@ -16,7 +16,7 @@ use Mockery;
 use Vinkla\Pusher\PusherManager;
 
 /**
- * This is the pusher manager test class.
+ * This is the Pusher manager test class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */

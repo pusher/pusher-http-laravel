@@ -15,7 +15,7 @@ use Vinkla\Pusher\Factories\PusherFactory;
 use Vinkla\Tests\Pusher\AbstractTestCase;
 
 /**
- * This is the pusher factory test class.
+ * This is the Pusher factory test class.
  *
  * @author Vincent Klaiber <hello@vinkla.com>
  */
