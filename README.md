@@ -1,7 +1,7 @@
 Laravel Pusher
 ==============
 
-![image](https://raw.githubusercontent.com/vinkla/vinkla.github.io/master/images/laravel-pusher.png)
+![laravel-pusher](https://cloud.githubusercontent.com/assets/499192/7440603/70c26e4a-f0bf-11e4-970c-971970cf98e3.png)
 
 Laravel [Pusher](https://pusher.com/) is a [Pusher](https://pusher.com/) bridge for Laravel 5 using the [official Pusher package](https://github.com/pusher/pusher-php-server).
 
