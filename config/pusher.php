@@ -44,7 +44,7 @@ return [
             'options' => [],
             'host' => null,
             'port' => null,
-            'timeout' => null
+            'timeout' => null,
         ],
 
         'alternative' => [
@@ -54,9 +54,9 @@ return [
             'options' => [],
             'host' => null,
             'port' => null,
-            'timeout' => null
+            'timeout' => null,
         ],
 
-    ]
+    ],
 
 ];

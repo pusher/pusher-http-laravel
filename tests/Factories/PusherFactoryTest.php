@@ -32,7 +32,7 @@ class PusherFactoryTest extends AbstractTestCase
             'options' => [],
             'host' => null,
             'port' => null,
-            'timeout' => null
+            'timeout' => null,
         ]);
 
         $this->assertInstanceOf('Pusher', $return);
@@ -51,7 +51,7 @@ class PusherFactoryTest extends AbstractTestCase
             'options' => [],
             'host' => null,
             'port' => null,
-            'timeout' => null
+            'timeout' => null,
         ]);
     }
 
@@ -68,7 +68,7 @@ class PusherFactoryTest extends AbstractTestCase
             'options' => [],
             'host' => null,
             'port' => null,
-            'timeout' => null
+            'timeout' => null,
         ]);
     }
 
@@ -85,7 +85,7 @@ class PusherFactoryTest extends AbstractTestCase
             'options' => [],
             'host' => null,
             'port' => null,
-            'timeout' => null
+            'timeout' => null,
         ]);
     }
 

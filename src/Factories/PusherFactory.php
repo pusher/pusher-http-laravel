@@ -24,6 +24,7 @@ class PusherFactory
      * Make a new Pusher client.
      *
      * @param array $config
+     *
      * @return \Pusher
      */
     public function make(array $config)
@@ -51,7 +52,7 @@ class PusherFactory
             'options',
             'host',
             'port',
-            'timeout'
+            'timeout',
         ];
 
         foreach ($keys as $key) {

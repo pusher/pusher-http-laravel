@@ -15,16 +15,13 @@
          verbose="true"
         >
     <testsuites>
-        <testsuite name="Laravel Hashids Test Suite">
+        <testsuite name="Laravel Pusher Test Suite">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./src</directory>
-            <exclude>
-                <directory>./src/config</directory>
-            </exclude>
         </whitelist>
     </filter>
 </phpunit>

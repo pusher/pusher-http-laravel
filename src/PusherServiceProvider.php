@@ -100,7 +100,7 @@ class PusherServiceProvider extends ServiceProvider
     {
         return [
             'pusher',
-            'pusher.factory'
+            'pusher.factory',
         ];
     }
 }
