@@ -1,6 +1,6 @@
 {
 	"name": "vinkla/pusher",
-	"description": "Laravel wrapper for the Pusher HTTP REST API.",
+	"description": "A Pusher bridge for Laravel",
 	"license": "MIT",
 	"keywords": ["laravel", "pusher", "http", "api", "php-pusher-server", "rest", "realtime", "trigger", "publish", "events"],
 	"authors": [
@@ -31,7 +31,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "1.0-dev"
+			"dev-master": "1.1-dev"
 		}
 	},
 	"minimum-stability": "dev",
