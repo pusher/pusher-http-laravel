@@ -40,7 +40,9 @@ class PusherServiceProvider extends ServiceProvider
     {
         $source = realpath(__DIR__.'/../config/pusher.php');
 
-        $this->publishes([$source => config_path('pusher.php')]);
+        if (class_exists('Illuminate\Foundation\Application', false)) {
+            $this->publishes([$source => config_path('pusher.php')]);
+        }
 
         $this->mergeConfigFrom($source, 'pusher');
     }
