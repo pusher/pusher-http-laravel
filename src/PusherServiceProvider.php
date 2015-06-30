@@ -13,6 +13,7 @@ namespace Vinkla\Pusher;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
+use Pusher;
 
 /**
  * This is the Pusher service provider class.
@@ -56,6 +57,7 @@ class PusherServiceProvider extends ServiceProvider
     {
         $this->registerFactory($this->app);
         $this->registerManager($this->app);
+        $this->registerBindings($this->app);
     }
 
     /**
@@ -94,6 +96,24 @@ class PusherServiceProvider extends ServiceProvider
     }
 
     /**
+     * Register the bindings.
+     *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
+     * @return void
+     */
+    protected function registerBindings(Application $app)
+    {
+        $app->bind('pusher.connection', function ($app) {
+            $manager = $app['pusher'];
+
+            return $manager->connection();
+        });
+
+        $app->alias('pusher.connection', Pusher::class);
+    }
+
+    /**
      * Get the services provided by the provider.
      *
      * @return string[]
@@ -103,6 +123,7 @@ class PusherServiceProvider extends ServiceProvider
         return [
             'pusher',
             'pusher.factory',
+            'pusher.connection',
         ];
     }
 }

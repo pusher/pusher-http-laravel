@@ -12,6 +12,7 @@
 namespace Vinkla\Tests\Pusher;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;
+use Pusher;
 use Vinkla\Pusher\PusherFactory;
 use Vinkla\Pusher\PusherManager;
 
@@ -32,5 +33,17 @@ class ServiceProviderTest extends AbstractTestCase
     public function testPusherManagerIsInjectable()
     {
         $this->assertIsInjectable(PusherManager::class);
+    }
+
+    public function testBindings()
+    {
+        $this->assertIsInjectable(Pusher::class);
+
+        $original = $this->app['pusher.connection'];
+        $this->app['pusher']->reconnect();
+        $new = $this->app['pusher.connection'];
+
+        $this->assertNotSame($original, $new);
+        $this->assertEquals($original, $new);
     }
 }
