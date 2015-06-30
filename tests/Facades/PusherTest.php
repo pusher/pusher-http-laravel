@@ -11,7 +11,7 @@
 
 namespace Vinkla\Tests\Pusher\Facades;
 
-use GrahamCampbell\TestBench\Traits\FacadeTestCaseTrait;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 use Vinkla\Tests\Pusher\AbstractTestCase;
 
 /**
@@ -21,7 +21,7 @@ use Vinkla\Tests\Pusher\AbstractTestCase;
  */
 class PusherTest extends AbstractTestCase
 {
-    use FacadeTestCaseTrait;
+    use FacadeTrait;
 
     /**
      * Get the facade accessor.
