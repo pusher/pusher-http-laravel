@@ -12,7 +12,10 @@
 namespace Vinkla\Tests\Pusher;
 
 use GrahamCampbell\TestBench\AbstractTestCase as AbstractTestBenchTestCase;
+use Illuminate\Contracts\Config\Repository;
 use Mockery;
+use Pusher;
+use Vinkla\Pusher\PusherFactory;
 use Vinkla\Pusher\PusherManager;
 
 /**
@@ -35,15 +38,15 @@ class PusherManagerTest extends AbstractTestBenchTestCase
 
         $return = $manager->connection();
 
-        $this->assertInstanceOf('Pusher', $return);
+        $this->assertInstanceOf(Pusher::class, $return);
 
         $this->assertArrayHasKey('pusher', $manager->getConnections());
     }
 
     protected function getManager(array $config)
     {
-        $repository = Mockery::mock('Illuminate\Contracts\Config\Repository');
-        $factory = Mockery::mock('Vinkla\Pusher\PusherFactory');
+        $repository = Mockery::mock(Repository::class);
+        $factory = Mockery::mock(PusherFactory::class);
 
         $manager = new PusherManager($repository, $factory);
 
@@ -53,7 +56,7 @@ class PusherManagerTest extends AbstractTestBenchTestCase
         $config['name'] = 'pusher';
 
         $manager->getFactory()->shouldReceive('make')->once()
-            ->with($config)->andReturn(Mockery::mock('Pusher'));
+            ->with($config)->andReturn(Mockery::mock(Pusher::class));
 
         return $manager;
     }

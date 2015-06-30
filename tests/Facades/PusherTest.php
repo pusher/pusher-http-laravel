@@ -12,6 +12,8 @@
 namespace Vinkla\Tests\Pusher\Facades;
 
 use GrahamCampbell\TestBenchCore\FacadeTrait;
+use Vinkla\Pusher\Facades\Pusher;
+use Vinkla\Pusher\PusherManager;
 use Vinkla\Tests\Pusher\AbstractTestCase;
 
 /**
@@ -40,7 +42,7 @@ class PusherTest extends AbstractTestCase
      */
     protected function getFacadeClass()
     {
-        return 'Vinkla\Pusher\Facades\Pusher';
+        return Pusher::class;
     }
 
     /**
@@ -50,6 +52,6 @@ class PusherTest extends AbstractTestCase
      */
     protected function getFacadeRoot()
     {
-        return 'Vinkla\Pusher\PusherManager';
+        return PusherManager::class;
     }
 }

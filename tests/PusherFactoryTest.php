@@ -11,6 +11,7 @@
 
 namespace Vinkla\Tests\Pusher;
 
+use Pusher;
 use Vinkla\Pusher\PusherFactory;
 
 /**
@@ -34,7 +35,7 @@ class PusherFactoryTest extends AbstractTestCase
             'timeout' => null,
         ]);
 
-        $this->assertInstanceOf('Pusher', $return);
+        $this->assertInstanceOf(Pusher::class, $return);
     }
 
     /**

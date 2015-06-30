@@ -12,6 +12,7 @@
 namespace Vinkla\Tests\Pusher;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
+use Vinkla\Pusher\PusherServiceProvider;
 
 /**
  * This is the abstract test class.
@@ -29,6 +30,6 @@ abstract class AbstractTestCase extends AbstractPackageTestCase
      */
     protected function getServiceProviderClass($app)
     {
-        return 'Vinkla\Pusher\PusherServiceProvider';
+        return PusherServiceProvider::class;
     }
 }
