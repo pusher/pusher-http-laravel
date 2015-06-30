@@ -9,10 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Vinkla\Tests\Pusher\Factories;
+namespace Vinkla\Tests\Pusher;
 
-use Vinkla\Pusher\Factories\PusherFactory;
-use Vinkla\Tests\Pusher\AbstractTestCase;
+use Vinkla\Pusher\PusherFactory;
 
 /**
  * This is the Pusher factory test class.

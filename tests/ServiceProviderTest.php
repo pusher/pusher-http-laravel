@@ -24,7 +24,7 @@ class ServiceProviderTest extends AbstractTestCase
 
     public function testPusherFactoryIsInjectable()
     {
-        $this->assertIsInjectable('Vinkla\Pusher\Factories\PusherFactory');
+        $this->assertIsInjectable('Vinkla\Pusher\PusherFactory');
     }
 
     public function testPusherManagerIsInjectable()

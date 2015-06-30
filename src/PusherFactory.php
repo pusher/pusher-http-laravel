@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Vinkla\Pusher\Factories;
+namespace Vinkla\Pusher;
 
 use Pusher;
 

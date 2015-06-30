@@ -68,10 +68,10 @@ class PusherServiceProvider extends ServiceProvider
     protected function registerFactory(Application $app)
     {
         $app->singleton('pusher.factory', function () {
-            return new Factories\PusherFactory();
+            return new \Vinkla\Pusher\PusherFactory();
         });
 
-        $app->alias('pusher.factory', 'Vinkla\Pusher\Factories\PusherFactory');
+        $app->alias('pusher.factory', 'Vinkla\Pusher\PusherFactory');
     }
 
     /**

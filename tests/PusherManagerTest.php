@@ -43,7 +43,7 @@ class PusherManagerTest extends AbstractTestBenchTestCase
     protected function getManager(array $config)
     {
         $repository = Mockery::mock('Illuminate\Contracts\Config\Repository');
-        $factory = Mockery::mock('Vinkla\Pusher\Factories\PusherFactory');
+        $factory = Mockery::mock('Vinkla\Pusher\PusherFactory');
 
         $manager = new PusherManager($repository, $factory);
 
