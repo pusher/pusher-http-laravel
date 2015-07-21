@@ -17,7 +17,8 @@ Pusher::get('/channels');
 ```
 
 [![Build Status](https://img.shields.io/travis/vinkla/pusher/master.svg?style=flat)](https://travis-ci.org/vinkla/pusher)
-[![StyleCI](https://styleci.io/repos/30508702/shield?style=flat)](https://styleci.io/repos/30508702)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinkla/pusher.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/pusher/code-structure)
+[![Quality Score](https://img.shields.io/scrutinizer/g/vinkla/pusher.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/pusher)
 [![Latest Version](https://img.shields.io/github/release/vinkla/pusher.svg?style=flat)](https://github.com/vinkla/pusher/releases)
 [![License](https://img.shields.io/packagist/l/vinkla/pusher.svg?style=flat)](https://packagist.org/packages/vinkla/pusher)
 
