@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.1.0 (upcoming)
+
+- Improved Lumen support
+
 ## 2.0.0 (released 2015-07-01)
 
 - Official Lumen support
