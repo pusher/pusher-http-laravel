@@ -32,13 +32,13 @@ composer require vinkla/pusher
 Add the service provider to ```config/app.php``` in the `providers` array.
 
 ```php
-'Vinkla\Pusher\PusherServiceProvider'
+Vinkla\Pusher\PusherServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in ```config/app.php``` to your aliases array.
 
 ```php
-'Pusher' => 'Vinkla\Pusher\Facades\Pusher'
+'Pusher' => Vinkla\Pusher\Facades\Pusher::class
 ```
 
 > *Are you having problems with the facade? [We do too](https://github.com/vinkla/pusher/issues/2)! This is because how the [base Pusher package](https://github.com/pusher/pusher-php-server) is built. Read more in issue number [#2](https://github.com/vinkla/pusher/issues/2).*
