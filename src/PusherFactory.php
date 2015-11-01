@@ -11,6 +11,7 @@
 
 namespace Vinkla\Pusher;
 
+use InvalidArgumentException;
 use Pusher;
 
 /**
@@ -57,9 +58,7 @@ class PusherFactory
 
         foreach ($keys as $key) {
             if (!array_key_exists($key, $config)) {
-                throw new \InvalidArgumentException(
-                    'The Pusher client requires configuration.'
-                );
+                throw new InvalidArgumentException("Missing configuration key [$key].");
             }
         }
 
