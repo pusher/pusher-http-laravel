@@ -41,12 +41,6 @@ If you want you can use the [facade](http://laravel.com/docs/facades). Add the r
 'Pusher' => Vinkla\Pusher\Facades\Pusher::class
 ```
 
-> *Are you having problems with the facade? [We do too](https://github.com/vinkla/pusher/issues/2)! This is because how the [base Pusher package](https://github.com/pusher/pusher-php-server) is built. Read more in issue number [#2](https://github.com/vinkla/pusher/issues/2).*
-
-#### Looking for a Laravel 4 compatable version?
-
-Please use [@artdarek's Laravel 4 Pusherer package](https://github.com/artdarek/pusherer) instead.
-
 ## Configuration
 
 Laravel Pusher requires connection configuration. To get started, you'll need to publish all vendor assets:
