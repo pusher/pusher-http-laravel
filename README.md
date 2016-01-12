@@ -3,7 +3,7 @@ Laravel Pusher
 
 ![pusher](https://cloud.githubusercontent.com/assets/499192/10742855/b4884ca2-7c2f-11e5-867c-c94276849ffb.png)
 
-Laravel [Pusher](https://pusher.com/) is a [Pusher](https://pusher.com/) bridge for Laravel 5 using the [official Pusher package](https://github.com/pusher/pusher-php-server).
+Laravel [Pusher](https://pusher.com/) is a [Pusher](https://pusher.com/) bridge for Laravel 5 using the [official Pusher package](https://github.com/pusher/pusher-http-php).
 
 ```php
 // Triggering events.
