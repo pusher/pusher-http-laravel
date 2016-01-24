@@ -31,24 +31,22 @@ class PusherServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->setupConfig($this->app);
+        $this->setupConfig();
     }
 
     /**
      * Setup the config.
      *
-     * @param \Illuminate\Contracts\Container\Container $app
-     *
      * @return void
      */
-    protected function setupConfig(Application $app)
+    protected function setupConfig()
     {
         $source = realpath(__DIR__.'/../config/pusher.php');
 
-        if ($app instanceof LaravelApplication && $app->runningInConsole()) {
+        if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('pusher.php')]);
-        } elseif ($app instanceof LumenApplication) {
-            $app->configure('pusher');
+        } elseif ($this->app instanceof LumenApplication) {
+            $this->app->configure('pusher');
         }
 
         $this->mergeConfigFrom($source, 'pusher');
