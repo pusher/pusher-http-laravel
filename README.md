@@ -59,6 +59,15 @@ This option `default` is where you may specify which of the connections below yo
 
 This option `connections` is where each of the connections are setup for your application. Example configuration has been included, but you may add as many connections as you would like.
 
+#### Working with a cluster
+Pusher is setting up [cluster zones](https://pusher.com/docs/clusters) and if you work in another zone that `us-east-1` you will have to specify it in the options of the config file.
+
+```PHP
+'options' => [
+  'cluster' => 'APP_CLUSTER'
+]
+```
+
 ## Usage
 
 #### PusherManager
