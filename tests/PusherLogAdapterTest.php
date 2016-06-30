@@ -30,5 +30,7 @@ class PusherLogAdapterTest extends AbstractTestCase
         $adapter = new PusherLogAdapter($logger);
 
         $adapter->log('this message');
+
+        $this->addToAssertionCount(1);
     }
 }

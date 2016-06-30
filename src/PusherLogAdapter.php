@@ -25,6 +25,7 @@ class PusherLogAdapter
 
     /**
      * PusherLogAdapter constructor.
+     *
      * @param Log $log
      */
     public function __construct(Log $log)
@@ -34,7 +35,9 @@ class PusherLogAdapter
 
     /**
      * Relay a message to the Laravel logger.
-     * @param String $message
+     *
+     * @param string $message
+     *
      * @return void
      */
     public function log($message)

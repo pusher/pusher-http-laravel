@@ -56,7 +56,7 @@ class PusherFactory
             'timeout',
         ];
         $optionalKeys = [
-            'log'
+            'log',
         ];
 
         foreach ($keys as $key) {
