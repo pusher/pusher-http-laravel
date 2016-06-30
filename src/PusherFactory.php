@@ -55,6 +55,9 @@ class PusherFactory
             'port',
             'timeout',
         ];
+        $optionalKeys = [
+            'log'
+        ];
 
         foreach ($keys as $key) {
             if (!array_key_exists($key, $config)) {
@@ -62,7 +65,7 @@ class PusherFactory
             }
         }
 
-        return array_only($config, $keys);
+        return array_only($config, array_merge($keys, $optionalKeys));
     }
 
     /**
@@ -74,7 +77,7 @@ class PusherFactory
      */
     protected function getClient(array $auth)
     {
-        return new Pusher(
+        $pusher = new Pusher(
             $auth['auth_key'],
             $auth['secret'],
             $auth['app_id'],
@@ -83,5 +86,11 @@ class PusherFactory
             $auth['port'],
             $auth['timeout']
         );
+
+        if (isset($auth['log']) && $auth['log'] == true) {
+            $pusher->set_logger(app(PusherLogAdapter::class));
+        }
+
+        return $pusher;
     }
 }

@@ -38,6 +38,24 @@ class PusherFactoryTest extends AbstractTestCase
         $this->assertInstanceOf(Pusher::class, $return);
     }
 
+    public function testMakeWithLogging()
+    {
+        $factory = $this->getPusherFactory();
+
+        $return = $factory->make([
+            'auth_key' => 'your-auth-key',
+            'secret' => 'your-secret',
+            'app_id' => 'your-app-id',
+            'options' => [],
+            'host' => null,
+            'port' => null,
+            'timeout' => null,
+            'log' => true,
+        ]);
+
+        $this->assertInstanceOf(Pusher::class, $return);
+    }
+
     /**
      * @expectedException \InvalidArgumentException
      */
