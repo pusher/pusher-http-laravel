@@ -20,7 +20,7 @@ use Vinkla\Pusher\PusherLogAdapter;
  *
  * @author Michal Carson <michal.carson@carsonsoftwareengineering.com>
  */
-class PusherFactoryTest extends AbstractTestCase
+class PusherLogAdapterTest extends AbstractTestCase
 {
     public function testLog()
     {
