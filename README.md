@@ -16,7 +16,7 @@ $pusher->socket_auth('my-channel', 'socket_id');
 Pusher::get('/channels');
 ```
 
-[![Build Status](https://img.shields.io/travis/vinkla/pusher/master.svg?style=flat)](https://travis-ci.org/vinkla/pusher)
+[![Build Status](https://img.shields.io/travis/vinkla/laravel-pusher/master.svg?style=flat)](https://travis-ci.org/vinkla/laravel-pusher)
 [![StyleCI](https://styleci.io/repos/30508702/shield?style=flat)](https://styleci.io/repos/30508702)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinkla/pusher.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/pusher/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/vinkla/pusher.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/pusher)
