@@ -27,7 +27,7 @@ Pusher::get('/channels');
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-composer require vinkla/pusher
+$ composer require vinkla/pusher
 ```
 
 Add the service provider to `config/app.php` in the `providers` array.
@@ -41,7 +41,7 @@ Vinkla\Pusher\PusherServiceProvider::class
 Laravel Pusher requires connection configuration. To get started, you'll need to publish all vendor assets:
 
 ```bash
-php artisan vendor:publish
+$ php artisan vendor:publish
 ```
 
 This will create a `config/pusher.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
