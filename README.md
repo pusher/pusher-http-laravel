@@ -1,9 +1,8 @@
-Laravel Pusher
-==============
+# Laravel Pusher
 
 ![pusher](https://cloud.githubusercontent.com/assets/499192/10742855/b4884ca2-7c2f-11e5-867c-c94276849ffb.png)
 
-Laravel [Pusher](https://pusher.com/) is a [Pusher](https://pusher.com/) bridge for Laravel 5 using the [official Pusher package](https://github.com/pusher/pusher-http-php).
+> A [Pusher](https://github.com/pusher/pusher-http-php) bridge for Laravel.
 
 ```php
 // Triggering events.
@@ -18,12 +17,12 @@ Pusher::get('/channels');
 
 [![Build Status](https://img.shields.io/travis/vinkla/laravel-pusher/master.svg?style=flat)](https://travis-ci.org/vinkla/laravel-pusher)
 [![StyleCI](https://styleci.io/repos/30508702/shield?style=flat)](https://styleci.io/repos/30508702)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/vinkla/pusher.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/pusher/code-structure)
-[![Quality Score](https://img.shields.io/scrutinizer/g/vinkla/pusher.svg?style=flat)](https://scrutinizer-ci.com/g/vinkla/pusher)
+[![Coverage Status](https://img.shields.io/codecov/c/github/vinkla/laravel-pusher.svg?style=flat)](https://codecov.io/github/vinkla/laravel-pusher)
 [![Latest Version](https://img.shields.io/github/release/vinkla/pusher.svg?style=flat)](https://github.com/vinkla/pusher/releases)
 [![License](https://img.shields.io/packagist/l/vinkla/pusher.svg?style=flat)](https://packagist.org/packages/vinkla/pusher)
 
 ## Installation
+
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
@@ -69,6 +68,7 @@ This facade will dynamically pass static method calls to the `pusher` object in 
 This class contains no public methods of interest. This class should be added to the providers array in `config/app.php`. This class will setup ioc bindings.
 
 ### Examples
+
 Here you can see an example of just how simple this package is to use. Out of the box, the default adapter is `main`. After you enter your authentication details in the config file, it will just work:
 
 ```php
@@ -127,8 +127,9 @@ App::make('Foo')->bar();
 ```
 
 ## Documentation
+
 There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Pusher package](https://github.com/pusher/pusher-php-server).
 
 ## License
 
-Laravel Pusher is licensed under [The MIT License (MIT)](LICENSE).
+[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
