@@ -18,7 +18,7 @@
         "pusher/pusher-php-server": "^2.2.1"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.2",
+        "graham-campbell/testbench": "^3.3",
         "mockery/mockery": "^0.9.5",
         "phpunit/phpunit": "^5.7"
     },
