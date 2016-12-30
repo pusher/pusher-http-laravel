@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace Vinkla\Pusher\Facades;
 
 use Illuminate\Support\Facades\Facade;
@@ -25,7 +27,7 @@ class Pusher extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor()
+    protected static function getFacadeAccessor(): string
     {
         return 'pusher';
     }
