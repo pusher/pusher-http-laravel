@@ -47,6 +47,7 @@ return [
             'host' => null,
             'port' => null,
             'timeout' => null,
+            'log' => false,
         ],
 
         'alternative' => [
@@ -57,6 +58,7 @@ return [
             'host' => null,
             'port' => null,
             'timeout' => null,
+            'log' => false,
         ],
 
     ],
