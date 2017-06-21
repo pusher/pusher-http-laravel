@@ -38,6 +38,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "2.5-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Vinkla\\Pusher\\PusherServiceProvider"
+            ],
+            "aliases": {
+                "Pusher": "Vinkla\\Pusher\\Facades\\Pusher"
+            }
         }
     },
     "minimum-stability": "dev",
