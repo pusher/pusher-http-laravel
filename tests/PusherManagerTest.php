@@ -16,7 +16,7 @@ namespace Vinkla\Tests\Pusher;
 use GrahamCampbell\TestBench\AbstractTestCase as AbstractTestBenchTestCase;
 use Illuminate\Contracts\Config\Repository;
 use Mockery;
-use Pusher;
+use Pusher\Pusher;
 use Vinkla\Pusher\PusherFactory;
 use Vinkla\Pusher\PusherManager;
 

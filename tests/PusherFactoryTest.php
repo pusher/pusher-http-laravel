@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Vinkla\Tests\Pusher;
 
-use Pusher;
+use Pusher\Pusher;
 use Vinkla\Pusher\PusherFactory;
 
 /**

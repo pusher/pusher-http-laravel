@@ -15,7 +15,7 @@ namespace Vinkla\Pusher;
 
 use GrahamCampbell\Manager\AbstractManager;
 use Illuminate\Contracts\Config\Repository;
-use Pusher;
+use Pusher\Pusher;
 
 /**
  * This is the Pusher manager class.
@@ -51,7 +51,7 @@ class PusherManager extends AbstractManager
      *
      * @param array $config
      *
-     * @return \Pusher
+     * @return \Pusher\Pusher
      */
     protected function createConnection(array $config): Pusher
     {

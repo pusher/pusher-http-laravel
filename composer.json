@@ -15,7 +15,7 @@
         "illuminate/contracts": "5.3.* || 5.4.*",
         "illuminate/support": "5.3.* || 5.4.*",
         "graham-campbell/manager": "^2.5",
-        "pusher/pusher-php-server": "^2.6"
+        "pusher/pusher-php-server": "^3.0"
     },
     "require-dev": {
         "graham-campbell/testbench": "^3.3",

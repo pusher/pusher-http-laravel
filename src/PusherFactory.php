@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace Vinkla\Pusher;
 
 use InvalidArgumentException;
-use Pusher;
+use Pusher\Pusher;
 
 /**
  * This is the Pusher factory class.
@@ -28,7 +28,7 @@ class PusherFactory
      *
      * @param array $config
      *
-     * @return \Pusher
+     * @return \Pusher\Pusher
      */
     public function make(array $config): Pusher
     {
@@ -72,7 +72,7 @@ class PusherFactory
      *
      * @param string[] $auth
      *
-     * @return \Pusher
+     * @return \Pusher\Pusher
      */
     protected function getClient(array $auth): Pusher
     {
