@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 3.0.0 (released 2017-08-07)
+
+- Added laravel 5.5 support
+- Update pusher package
+
 ## 2.5.0 (released 2017-01-01)
 
 - Added laravel 5.4 support
