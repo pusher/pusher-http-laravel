@@ -116,17 +116,17 @@ use Vinkla\Pusher\PusherManager;
 
 class Foo
 {
-	protected $pusher;
+    protected $pusher;
 
-	public function __construct(PusherManager $pusher)
-	{
-		$this->pusher = $pusher;
-	}
+    public function __construct(PusherManager $pusher)
+    {
+        $this->pusher = $pusher;
+    }
 
-	public function bar()
-	{
-		$this->pusher->trigger('my-channel', 'my-event', ['message' => $message]);
-	}
+    public function bar()
+    {
+        $this->pusher->trigger('my-channel', 'my-event', ['message' => $message]);
+    }
 }
 
 App::make('Foo')->bar();
