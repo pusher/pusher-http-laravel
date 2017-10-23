@@ -2,7 +2,7 @@
 
 ![pusher](https://user-images.githubusercontent.com/499192/28176443-b96829f8-67f7-11e7-8cad-7322d296266e.jpg)
 
-> A [Pusher](https://github.com/pusher/pusher-http-php) bridge for Laravel. Formerly `Vinkla/laravel-pusher`
+> A [Pusher](https://github.com/pusher/pusher-http-php) bridge for Laravel. Formerly `vinkla/pusher`.
 
 ```php
 // Triggering events.
