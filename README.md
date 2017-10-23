@@ -15,30 +15,30 @@ $pusher->socket_auth('my-channel', 'socket_id');
 Pusher::get('/channels');
 ```
 
-[![Build Status](https://img.shields.io/travis/vinkla/laravel-pusher/master.svg?style=flat)](https://travis-ci.org/vinkla/laravel-pusher)
+[![Build Status](https://img.shields.io/travis/pusher/pusher-http-laravel/master.svg?style=flat)](https://travis-ci.org/pusher/pusher-http-laravel)
 [![StyleCI](https://styleci.io/repos/30508702/shield?style=flat)](https://styleci.io/repos/30508702)
-[![Coverage Status](https://img.shields.io/codecov/c/github/vinkla/laravel-pusher.svg?style=flat)](https://codecov.io/github/vinkla/laravel-pusher)
-[![Latest Version](https://img.shields.io/github/release/vinkla/pusher.svg?style=flat)](https://github.com/vinkla/pusher/releases)
-[![License](https://img.shields.io/packagist/l/vinkla/pusher.svg?style=flat)](https://packagist.org/packages/vinkla/pusher)
+[![Coverage Status](https://img.shields.io/codecov/c/github/pusher/pusher-http-laravel.svg?style=flat)](https://codecov.io/github/pusher/pusher-http-laravel)
+[![Latest Version](https://img.shields.io/github/release/pusher/pusher-http-laravel.svg?style=flat)](https://github.com/pusher/pusher-http-laravel/releases)
+[![License](https://img.shields.io/packagist/l/pusher/pusher-http-laravel.svg?style=flat)](https://packagist.org/packages/pusher/pusher-http-laravel)
 
 ## Installation
 
 Require this package, with [Composer](https://getcomposer.org/), in the root directory of your project.
 
 ```bash
-$ composer require vinkla/pusher
+$ composer require pusher/pusher-http-laravel
 ```
 
 Add the service provider to `config/app.php` in the `providers` array, or if you're using Laravel 5.5, this can be done via the automatic package discovery.
 
 ```php
-Vinkla\Pusher\PusherServiceProvider::class
+Pusher\Laravel\PusherServiceProvider::class
 ```
 
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
 
 ```php
-'Pusher' => Vinkla\Pusher\Facades\Pusher::class
+'Pusher' => Pusher\Laravel\Facades\Pusher::class
 ```
 
 ## Configuration
@@ -79,7 +79,7 @@ Here you can see an example of just how simple this package is to use. Out of th
 
 ```php
 // You can alias this in config/app.php.
-use Vinkla\Pusher\Facades\Pusher;
+use Pusher\Laravel\Facades\Pusher;
 
 Pusher::trigger('my-channel', 'my-event', ['message' => $message]);
 // We're done here - how easy was that, it just works!
@@ -91,7 +91,7 @@ Pusher::getSettings();
 The Pusher manager will behave like it is a `Pusher`. If you want to call specific connections, you can do that with the connection method:
 
 ```php
-use Vinkla\Pusher\Facades\Pusher;
+use Pusher\Laravel\Facades\Pusher;
 
 // Writing this…
 Pusher::connection('main')->log('They see me logging…');
@@ -112,7 +112,7 @@ Pusher::setDefaultConnection('alternative'); // The default is now alternative.
 If you prefer to use dependency injection over facades like me, then you can inject the manager:
 
 ```php
-use Vinkla\Pusher\PusherManager;
+use Pusher\Laravel\PusherManager;
 
 class Foo
 {
@@ -138,4 +138,4 @@ There are other classes in this package that are not documented here. This is be
 
 ## License
 
-[MIT](LICENSE) © [Vincent Klaiber](https://vinkla.com)
+[MIT](LICENSE) © [Pusher](https://pusher.com)

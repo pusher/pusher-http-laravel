@@ -1,5 +1,5 @@
 {
-    "name": "vinkla/pusher",
+    "name": "pusher/pusher-http-laravel",
     "description": "A Pusher bridge for Laravel",
     "license": "MIT",
     "keywords": ["laravel", "pusher", "http", "api", "php-pusher-server", "rest", "realtime", "trigger", "publish", "events"],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Vinkla\\Pusher\\": "src/"
+            "Pusher\\Laravel\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vinkla\\Tests\\Pusher\\": "tests/"
+            "Pusher\\Tests\\Laravel\\": "tests/"
         }
     },
     "config": {
@@ -39,14 +39,14 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.1-dev"
+            "dev-master": "4.0-dev"
         },
         "laravel": {
             "providers": [
-                "Vinkla\\Pusher\\PusherServiceProvider"
+                "Pusher\\Laravel\\PusherServiceProvider"
             ],
             "aliases": {
-                "Pusher": "Vinkla\\Pusher\\Facades\\Pusher"
+                "Pusher": "Pusher\\Laravel\\Facades\\Pusher"
             }
         }
     },
