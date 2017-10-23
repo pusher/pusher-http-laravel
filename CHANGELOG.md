@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.0.0 (released 2017-10-23)
+
+- Update namespace to Pusher
+- Renamed package to pusher/pusher-http-laravel
+
 ## 3.1.0 (released 2017-09-02)
 
 - Removed laravel 5.3 and 5.4 support
