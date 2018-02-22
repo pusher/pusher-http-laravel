@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 5.0.0 (released 2018-02-02)
+
+- Added laravel 5.6 support
+- Dropped php 7.0 support
+
 ## 4.0.0 (released 2017-10-23)
 
 - Update namespace to Pusher
