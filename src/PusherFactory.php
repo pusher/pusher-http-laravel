@@ -64,7 +64,7 @@ class PusherFactory
             }
         }
         
-        foreach($config['options'] as $option => $value) {
+        foreach ($config['options'] as $option => $value) {
             if (is_null($value)) {
                 unset($config['options'][$option]);
             }
