@@ -60,7 +60,7 @@ This option `default` is where you may specify which of the connections below yo
 This option `connections` is where each of the connections are setup for your application. Example configuration has been included, but you may add as many connections as you would like.
 
 #### Encrypted Channels
-To enable (end to end encrypted channels)[https://pusher.com/docs/client_api_guide/client_encrypted_channels], you need to uncomment a line from the Pusher config file
+To enable [end to end encrypted channels](https://pusher.com/docs/client_api_guide/client_encrypted_channels), you need to uncomment a line from the Pusher config file
 
 ```
 'app_id' => env('PUSHER_APP_ID'),
