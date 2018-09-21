@@ -45,6 +45,7 @@ return [
             'app_id' => env('PUSHER_APP_ID'),
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
+                // 'encryption_master_key' => env('PUSHER_ENCRYPTION_MASTER_KEY'),
             ],
             'host' => null,
             'port' => null,
