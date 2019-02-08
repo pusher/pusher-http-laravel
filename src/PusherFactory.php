@@ -63,7 +63,7 @@ class PusherFactory
                 throw new InvalidArgumentException("Missing configuration key [$key].");
             }
         }
-        
+
         foreach ($config['options'] as $option => $value) {
             if (is_null($value)) {
                 unset($config['options'][$option]);
