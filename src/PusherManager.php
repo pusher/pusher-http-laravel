@@ -27,7 +27,7 @@ class PusherManager extends AbstractManager
     /**
      * The factory instance.
      *
-     * @var \Vinkla\Pusher\PusherFactory
+     * @var \Pusher\Laravel\PusherFactory
      */
     private $factory;
 
@@ -35,7 +35,7 @@ class PusherManager extends AbstractManager
      * Create a new Pusher manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \Vinkla\Pusher\PusherFactory $factory
+     * @param \Pusher\Laravel\PusherFactory $factory
      *
      * @return void
      */
@@ -71,7 +71,7 @@ class PusherManager extends AbstractManager
     /**
      * Get the factory instance.
      *
-     * @return \Vinkla\Pusher\PusherFactory
+     * @return \Pusher\Laravel\PusherFactory
      */
     public function getFactory(): PusherFactory
     {
