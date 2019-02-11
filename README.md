@@ -16,7 +16,7 @@ Pusher::get('/channels');
 ```
 
 [![Build Status](https://img.shields.io/travis/pusher/pusher-http-laravel/master.svg?style=flat)](https://travis-ci.org/pusher/pusher-http-laravel)
-[![StyleCI](https://github.styleci.io/repos/30508702/shield?branch=master)](https://github.styleci.io/repos/30508702)
+[![StyleCI](https://github.styleci.io/repos/30508702/shield?branch=master&style=flat)](https://github.styleci.io/repos/30508702)
 [![Coverage Status](https://img.shields.io/codecov/c/github/pusher/pusher-http-laravel.svg?style=flat)](https://codecov.io/github/pusher/pusher-http-laravel)
 [![Latest Version](https://img.shields.io/github/release/pusher/pusher-http-laravel.svg?style=flat)](https://github.com/pusher/pusher-http-laravel/releases)
 [![License](https://img.shields.io/packagist/l/pusher/pusher-http-laravel.svg?style=flat)](https://packagist.org/packages/pusher/pusher-http-laravel)
