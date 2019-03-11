@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## 4.2.1 (released 2018-09-21)
+
+- Documented end to end encryption support in the README
+
+## 4.2.0 (released 2018-09-05)
+
+- Added Laravel 5.7 Support
+
+## 4.1.1 (released 2018-04-23)
+
+- Updated config processing so that env variables are used by default
+
+## 4.1.0 (released 2018-02-27)
+
+- Added Laravel 5.6 Support
+
 ## 4.0.0 (released 2017-10-23)
 
 - Update namespace to Pusher
