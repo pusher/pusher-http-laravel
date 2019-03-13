@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 4.2.2 (released 2019-03-13)
+
+- Updated minimum version of `pusher/pusher-php-server` to 3.3
+- Fixed some phpdoc references
+- Added Laravel 5.8 Support
+
 ## 4.2.1 (released 2018-09-21)
 
 - Documented end to end encryption support in the README
