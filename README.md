@@ -62,10 +62,10 @@ This option `connections` is where each of the connections are setup for your ap
 To enable [end to end encrypted channels](https://pusher.com/docs/client_api_guide/client_encrypted_channels), you need to uncomment a line from the Channels config file
 
 ```
-'app_id' => env('CHANNELS_APP_ID'),
+'app_id' => env('APP_ID'),
 'options' => [
-    'cluster' => env('CHANNELS_APP_CLUSTER'),
-    'encryption_master_key' => env('CHANNELS_ENCRYPTION_MASTER_KEY'),
+    'cluster' => env('APP_CLUSTER'),
+    'encryption_master_key' => env('ENCRYPTION_MASTER_KEY'),
 ],
 'host' => null,
 'port' => null,
