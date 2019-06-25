@@ -1,6 +1,6 @@
 {
     "name": "pusher/pusher-http-laravel",
-    "description": "A Pusher bridge for Laravel",
+    "description": "[DEPRECATED] A Pusher bridge for Laravel",
     "license": "MIT",
     "keywords": ["laravel", "pusher", "http", "api", "php-pusher-server", "rest", "realtime", "trigger", "publish", "events"],
     "authors": [
