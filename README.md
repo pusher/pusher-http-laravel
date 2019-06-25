@@ -1,3 +1,9 @@
+# DEPRECATED
+
+Laravel now has [built-in support for Pusher Channels](https://laravel.com/docs/master/broadcasting). This is now the recommended approach to integrate Channels into a Laravel project.
+
+Currently, Pusher will continue to review any PRs and solve security vulnerabilities in this SDK, but will not be making any major improvements going forward.
+
 # Pusher Channels Laravel Library
 
 A [Pusher Channels](https://github.com/pusher/pusher-http-php) bridge for Laravel. Formerly `vinkla/pusher`.
