@@ -41,7 +41,7 @@ If you want you can use the [facade](http://laravel.com/docs/facades). Add the r
 
 ## Configuration
 
-Laravel Pusher requires connection configuration. To get started, you'll need to publish all vendor assets:
+The Laravel Channels SDK requires connection configuration. To get started, you'll need to publish all vendor assets:
 
 ```bash
 $ php artisan vendor:publish --provider="Pusher\Laravel\PusherServiceProvider"
@@ -53,18 +53,19 @@ This will create a `config/pusher.php` file in your app that you can modify to s
 
 This option `default` is where you may specify which of the connections below you wish to use as your default connection for all work. Of course, you may use many connections at once using the manager class. The default value for this setting is `main`.
 
-#### Pusher Connections
+#### Channels Connections
 
 This option `connections` is where each of the connections are setup for your application. Example configuration has been included, but you may add as many connections as you would like.
 
 #### Encrypted Channels
-To enable [end to end encrypted channels](https://pusher.com/docs/client_api_guide/client_encrypted_channels), you need to uncomment a line from the Pusher config file
+
+To enable [end to end encrypted channels](https://pusher.com/docs/client_api_guide/client_encrypted_channels), you need to uncomment a line from the Channels config file
 
 ```
-'app_id' => env('PUSHER_APP_ID'),
+'app_id' => env('CHANNELS_APP_ID'),
 'options' => [
-    'cluster' => env('PUSHER_APP_CLUSTER'),
-    'encryption_master_key' => env('PUSHER_ENCRYPTION_MASTER_KEY'),
+    'cluster' => env('CHANNELS_APP_CLUSTER'),
+    'encryption_master_key' => env('CHANNELS_ENCRYPTION_MASTER_KEY'),
 ],
 'host' => null,
 'port' => null,
@@ -102,7 +103,7 @@ Pusher::getSettings();
 // This example is simple and there are far more methods available.
 ```
 
-The Pusher manager will behave like it is a `Pusher`. If you want to call specific connections, you can do that with the connection method:
+The `PusherManager` will behave like it is a `Pusher`. If you want to call specific connections, you can do that with the connection method:
 
 ```php
 use Pusher\Laravel\Facades\Pusher;
@@ -148,7 +149,7 @@ App::make('Foo')->bar();
 
 ## Documentation
 
-There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Pusher package](https://github.com/pusher/pusher-php-server).
+There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Channels package](https://github.com/pusher/pusher-php-server).
 
 ## License
 
