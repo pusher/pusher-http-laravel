@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Pusher\Laravel;
 
+use Illuminate\Support\Arr;
 use InvalidArgumentException;
 use Pusher\Pusher;
 
@@ -70,7 +71,7 @@ class PusherFactory
             }
         }
 
-        return array_only($config, $keys);
+        return Arr::only($config, $keys);
     }
 
     /**
