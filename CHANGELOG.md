@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 4.2.3 (released 2019-12-23)
+
+- Added PHP 7.3 and 7.4 support
+- Added Laravel 6 Support
+
 ## 4.2.2 (released 2019-03-13)
 
 - Updated minimum version of `pusher/pusher-php-server` to 3.3
