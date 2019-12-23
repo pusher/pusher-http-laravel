@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Pusher\Tests\Laravel;
 
+use InvalidArgumentException;
 use Pusher\Laravel\PusherFactory;
 use Pusher\Pusher;
 
@@ -40,12 +41,11 @@ class PusherFactoryTest extends AbstractTestCase
         $this->assertInstanceOf(Pusher::class, $return);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutAuthKey()
     {
         $factory = $this->getPusherFactory();
+
+        $this->expectException(InvalidArgumentException::class);
 
         $factory->make([
             'secret' => 'your-secret',
@@ -57,12 +57,11 @@ class PusherFactoryTest extends AbstractTestCase
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutAppId()
     {
         $factory = $this->getPusherFactory();
+
+        $this->expectException(InvalidArgumentException::class);
 
         $factory->make([
             'auth_key' => 'your-auth-key',
@@ -74,12 +73,11 @@ class PusherFactoryTest extends AbstractTestCase
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     */
     public function testMakeWithoutSecret()
     {
         $factory = $this->getPusherFactory();
+
+        $this->expectException(InvalidArgumentException::class);
 
         $factory->make([
             'auth_key' => 'your-auth-key',
