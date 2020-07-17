@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 4.2.4 (released 2020-07-17)
+
+- Added Laravel 7 Support
+
 ## 4.2.3 (released 2019-12-23)
 
 - Added PHP 7.3 and 7.4 support
